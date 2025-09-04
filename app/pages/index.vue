@@ -3,8 +3,8 @@
 
   const { data: info } = await useFetch("/api/info");
 
-  const generatedAt = useState(() => new Date().toISOString());
-  const date = new Date(generatedAt.value);
+  const generatedAt = new Date().toISOString();
+  const date = new Date(generatedAt);
   const timeAgo = ref();
   onMounted(() => {
     timeAgo.value = ms(Date.now() - date.valueOf(), { long: true });
