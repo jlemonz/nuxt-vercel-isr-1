@@ -14,7 +14,7 @@
 <template>
   <div id="container">
     <Head>
-      <Title>Nuxt on Vercel</Title>
+      <Title>Nuxt 4 on Vercel</Title>
       <Meta
         name="description"
         content="HTML, dynamically rendered in a city near you"
